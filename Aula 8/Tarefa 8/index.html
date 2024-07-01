@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de Nome</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      #message {
+        font-size: 24px;
+        color: #333;
+      }
+    </style>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <div id="message"></div>
+
+    <script>
+      const nome = prompt('Por favor, digite seu nome:');
+
+
+      const mensagem = `Olá, ${nome}!`;
+
+
+      console.log(mensagem);
+
+
+      document.getElementById('message').innerText = mensagem;
+    </script>
+
+  </body>
+
+</html>
